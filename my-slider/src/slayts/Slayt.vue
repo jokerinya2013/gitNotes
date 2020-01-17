@@ -16,25 +16,27 @@
         </div>
         <p class="float-right">{{ i + 1 }}/{{ info.length }}</p>
         <div class="mt-5 slayt_footer">
-            <button
-                type="button"
-                class="btn btn-outline-secondary float-left"
-                :class="{ disabled: son }"
-                @click="nav('prev')"
-            >Önceki</button>
-
+            <button type="button" class="btn btn-outline-secondary float-left" @click="nav('prev')">
+                <span aria-hidden="true">&laquo;</span>
+            </button>
+            <button type="button" class="btn btn-outline-secondary float-left" @click="i = 0">İlk</button>
             <button
                 type="button"
                 class="btn btn-outline-secondary float-right"
-                :class="{ disabled: son }"
                 @click="nav('next')"
-            >Sonraki</button>
+            >
+                <span aria-hidden="true">&raquo;</span>
+            </button>
+            <button
+                type="button"
+                class="btn btn-outline-secondary float-right"
+                @click="i = info.length - 1"
+            >Son</button>
         </div>
     </div>
 </template>
 
 <script>
-/* burada js de yer alacak olan bilgiler dönecek. */
 import { info } from './data'
 export default {
     name: 'Slayt',
@@ -42,9 +44,10 @@ export default {
         return {
             info: info,
             i: 0,
-            son: false,
         }
     },
+    watch: {},
+    /* bu kısım çalışıtırııkcak */
     methods: {
         nav(side) {
             if (side === 'prev') {
@@ -64,7 +67,6 @@ export default {
             console.log(this.i)
         },
     },
-    //son u düzenleyeceksin
 }
 </script>
 
