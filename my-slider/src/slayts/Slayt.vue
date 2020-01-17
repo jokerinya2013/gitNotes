@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="row mt-5 align-items-center">
+        <div class="row mt-5">
             <table class="table" style="height: 30rem;">
                 <thead>
                     <tr>
@@ -8,8 +8,8 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="text-center bilgi">{{ info[i].bilgi }}</td>
+                    <tr v-for="(notlar, index) in info[i].bilgi" :key="index">
+                        <td class="text-center bilgi">{{ notlar }}</td>
                     </tr>
                 </tbody>
             </table>
@@ -73,7 +73,8 @@ export default {
     font-size: 2rem;
 }
 .bilgi {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    border: none;
 }
 .slayt_footer {
     border-top: 1px dotted #cccccc;
