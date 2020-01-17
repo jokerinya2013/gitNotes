@@ -80,6 +80,6 @@ export default {
 }
 .slayt_footer {
     border-top: 1px dotted #cccccc;
-    padding-top: 1rem;
+    padding: 1rem 0 5rem 0;
 }
 </style>
