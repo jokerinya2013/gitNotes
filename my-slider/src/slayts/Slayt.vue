@@ -13,27 +13,22 @@
                     </tr>
                 </tbody>
             </table>
-            <h5 class="float-right">{{ i + 1 }}/{{ info.length }}</h5>
         </div>
-
+        <p class="float-right">{{ i + 1 }}/{{ info.length }}</p>
         <div class="mt-5 slayt_footer">
             <button
                 type="button"
                 class="btn btn-outline-secondary float-left"
                 :class="{ disabled: son }"
                 @click="nav('prev')"
-            >
-                Önceki
-            </button>
+            >Önceki</button>
 
             <button
                 type="button"
                 class="btn btn-outline-secondary float-right"
                 :class="{ disabled: son }"
                 @click="nav('next')"
-            >
-                Sonraki
-            </button>
+            >Sonraki</button>
         </div>
     </div>
 </template>
