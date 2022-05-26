@@ -1,8 +1,41 @@
-# Git Notes (Turkish)
-Turkce hazirlanmis bu notlar hem calisma hem de git ve github hakkindaki bilgileri paylamak adina hazirlanmistir.  
-Repo icerisinde kaynak kodu goruntulenebilir.  
-Notlara ulasmak icin [tiklayiniz](https://jokerinyagitnotes.netlify.app).
+# Git Notes
 
-These notes, prepared in Turkish, are prepared to share information about both the study and git and github.  
-Source code can be viewed in the repo.  
-To see the live demo [click](https://jokerinyagitnotes.netlify.app).
+These project is about `git` and `github`. In this project, I share my humble knowledge about `git` and `github` in the net on this `VueJs SPA (Single Page Application)`.
+
+👉This site is online at <a href="https://jokerinyagitnotes.netlify.app" target="_blank">here</a>
+
+![Capture.PNG](Capture.PNG)
+
+## In this site I learned and practiced
+
+-   `Git` and `Github` knowledge,
+-   `Bootstrap4` and `pagination`,
+-   `Vuex` and `VueRouter`.
+
+## Project setup
+
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+
+```
+npm run build
+```
+
+### Lints and fixes files
+
+```
+npm run lint
+```
+
+### Customize configuration
+
+See [Configuration Reference](https://cli.vuejs.org/config/).
